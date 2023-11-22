@@ -1,0 +1,4 @@
+ this.setValue(this.getValue().toLowerCase());
+ const filter = new sap.ui.model.Filter("username", "Contains", this.getValue());
+
+ userTable.getBinding("rows").filter(filter, "Application");

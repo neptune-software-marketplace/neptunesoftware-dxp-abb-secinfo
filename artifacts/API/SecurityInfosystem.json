@@ -1,0 +1,223 @@
+{
+	"id": "ef1d509a-5a89-ee11-8925-000d3ab39655",
+	"createdAt": "2023-11-22T17:14:33.440Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "06f906a1-0f0d-40a1-c6cd-da3fbc40381b",
+			"method": "POST",
+			"path": "/roleDetail",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "Id"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "3fbd63bf-7904-ee11-907c-000d3aba433d"
+		},
+		{
+			"id": "a18bfdfa-fbc7-4f29-c5d7-4a81ed1570c8",
+			"method": "GET",
+			"path": "/roleSummary",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "3ecfda90-9e44-4e93-8924-149870deba7f",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "b69a6a94-7d35-4e96-d7a2-9de502f14250",
+							"name": "roleListEntry",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "fc7da110-6e04-ee11-907c-000d3aba433d"
+		}
+	],
+	"definitions": [
+		{
+			"id": "7f8b840d-3ae8-4e27-c811-60c84a9f5b87",
+			"name": "Id",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1b3668af-b9f8-4874-cf8c-9da76c797f99",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "abe7e94c-bedf-4951-b652-a28ca35728a1",
+			"name": "roleListEntry",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "5f895883-9380-4fcf-acaa-7e1f7bf119b7",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c3b3215c-9ac5-4f67-d026-d79ef3186c9f",
+					"name": "name",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "ddadc7b8-1cf4-49a9-c5b8-7d9d87b55892",
+					"name": "cockpitAccess",
+					"objectType": "boolean",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "3926592c-e0e5-4a2c-bc93-fe24fd2f911b",
+					"name": "sec_groups",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "d088b5dc-f095-4d6d-b218-ced80ea5a4a2",
+					"name": "tile_groups",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "ea121568-23ae-4afe-e4d7-e52526f4ade8",
+					"name": "tiles",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "SecurityInfosystem",
+	"endpoint": "/api/serverscript/securityinfosystem",
+	"ver": "23.11.22.1721",
+	"version": null,
+	"description": "API for Security Infosystem",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "fce52bc9-6d88-ee11-8925-000d3ab39655",
+	"apiGroup": "0025e954-5a89-ee11-8925-000d3ab39655",
+	"apiFormat": 0,
+	"roles": []
+}
